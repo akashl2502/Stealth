@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: aspira;
+  src: url("./Fonts/Aspira.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  box-shadow: rgba(0, 0, 0, 0) 0px 9px 8px, rgba(0, 0, 0, 0.22) 0px 8px 9px;
+}
+
+.aspira {
+  font-family: aspira;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #b5c0e0;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #b5c0e0;
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #b5c0e0;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #b5c0e0;
+}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #b5c0e0;
+}
+
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #b5c0e0;
+}
+input[type="checkbox"]:checked {
+  accent-color: blueviolet;
+}
+
+.outershadow {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.bubble {
+  position: relative;
+
+  background: #fff;
+
+  padding: 24px;
+}
+
+.bubble-bottom-left:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 14px solid #fff;
+  border-right: 0px solid transparent;
+  border-top: 10px solid #fff;
+  border-bottom: 14px solid transparent;
+  right: 0;
+  bottom: -14px;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f0f4fc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #545b77;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
